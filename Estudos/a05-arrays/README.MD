@@ -1,10 +1,15 @@
-# Arrays são listas do tipo reference que podem guardar valores de todos os tipos, e até mesmo outras listas. Cada espaço dentro de um array é representado por um indice e é por esses indices que podemos adicionar, acessar ou remover o conteúdo que está la dentro. Os indices vão de 0 a k-1, onde k é o tamanho máximo do array.
+# Arrays
+
+São listas do tipo reference que podem guardar valores de todos os tipos, e até mesmo outras listas. Cada espaço dentro de um array é representado por um indice e é por esses indices que podemos adicionar, acessar ou remover o conteúdo que está la dentro. Os indices vão de 0 a k-1, onde k é o tamanho máximo do array.
+Ao criar uma lista sem a inserção de valores, deve ser feita uma inicialização, por exemplo
 
 Formas de declarar um array:
+
 - tipo[] nomeReferencia = null; (somente variáveis do tipo referência e strings podem iniciar com null)
+
     Ao declarar um array, a quantidade de espaço que ele tera deve ser definido na inicialização ou ser null.
     int[] caixa = new int[k]; (onde k pode ser qualquer inteiro)
-    
+
     Outra forma seria colocar os valores diretamente
     int[] numeros = {1, 2, 3, 4, 5};
     mas, se considerarmos uma quantidade muito grande de números, fazer dessa maneira não é interessante.

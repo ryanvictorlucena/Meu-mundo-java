@@ -1,4 +1,6 @@
-Tipos primitivos guardam em memória um valor simples:
+# Tipos primitivos
+
+Guardam em memória um valor simples:
 
 - int -> tipo destinado a números inteiros (4 bytes);
 - double -> tipo destinado a tanto números inteiros quanto números em ponto flutuante (8 bytes);

@@ -1,4 +1,5 @@
-Operadores aritmeticos:
+# Operadores aritmeticos
+
 - soma + (também usado como concatenação quando tem uma string junto de um inteiro, por exemplo: soma = 10, print("A soma é " + soma));
 - subtração -;
 - multiplicação *;
@@ -6,6 +7,7 @@ Operadores aritmeticos:
 - resto da divisão %;
 
 Relacionais:
+
 - maior que (x > y);
 - menor que (x < y);
 - maior ou igual (x >= y);
@@ -14,10 +16,12 @@ Relacionais:
 - diferente !=;
 
 Logicos:
+
 - and && -> ambos devem ser verdadeiros para satisfazer
 - or || -> se um for verdadeiro satisfaz
 
 Atribuição:
+
 - soma +=;
 - subtração -=;
 - multiplicação *=;
