@@ -1,3 +1,5 @@
+package exercicio;
+
 public class Carro {
     private String nome;
     private String modelo;
@@ -15,6 +17,6 @@ public class Carro {
 
     public static void main(String[] args) {
         Carro c = new Carro("Renault Boreal", "Evolution", 2026);
-        System.out.println(c.getNome() + " " + c.getModelo() + " " + c.getAno());
+        System.out.println(c.getNome() + " " + c.getModelo() + " " + c.getAno());     
     }
 }
