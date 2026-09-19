@@ -101,7 +101,7 @@ isso quer dizer que a cada novo objeto da classe Carro criado o limite de veloci
     Velocidade máxima: 280.0
     Velocidade limite: 300.0
 
-Por outro lado, se a váriavel for static essa alteração será atribuida a todos os objetos da classe Carro
+Por outro lado, se a váriavel for static essa alteração será atribuida a todos os objetos da classe Carro.
 
     private static double limiteVelocidade = 300;
 
@@ -148,15 +148,17 @@ Dependendo do tipo do dado a ser lido, existe uma função expecifica, por exemp
 
 - Para ler um inteiro usamos
 
-    int idade = sc.nextInt();
+        int idade = sc.nextInt();
 
 - Para ler uma String usamos
 
-    //ler uma linha inteira
-    String nome = sc.nextLine();
+        ler uma linha inteira:
 
-    //ler somente a primeira palavra
-    String nome = sc.next();
+        String nome = sc.nextLine();
+
+        ler somente a primeira palavra:
+
+        String nome = sc.next();
 
 ## Herança
 
