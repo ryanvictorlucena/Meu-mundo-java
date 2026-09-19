@@ -1,4 +1,4 @@
-package exercicio;
+package dominio;
 
 public class Carro {
     private String nome;
@@ -15,8 +15,5 @@ public class Carro {
     public String getModelo() {return this.modelo;}
     public int getAno() {return this.ano;}
 
-    public static void main(String[] args) {
-        Carro c = new Carro("Renault Boreal", "Evolution", 2026);
-        System.out.println(c.getNome() + " " + c.getModelo() + " " + c.getAno());     
-    }
+    
 }
