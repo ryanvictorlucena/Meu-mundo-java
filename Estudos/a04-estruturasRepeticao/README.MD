@@ -2,7 +2,9 @@
 
 Como o próprio nome diz, é uma estrutura que garante um looping. É muito utilizado quando queremos ter uma contagem por exemplo ou ter varias execuções de alguma coisa.
 
-- While: Uma das funções que permitem um loop. Sua estrutura se da como,
+## While
+
+Uma das funções que permitem um loop. Sua estrutura se da como,
     while(condição de continuação) {
         bloco que entrara em loop
     }
@@ -14,7 +16,9 @@ Como o próprio nome diz, é uma estrutura que garante um looping. É muito util
 
     A principal diferença do while pro do while é que o do while executa pelo menos uma vez, mesmo que a condição de continuação do while não seja atendida.
 
-- For: Uma função de loop parecida com o while, a principal diferença é que no for existe uma condição de parada, enquanto que no while existe uma condição de continuação. Sua sitaxe é
+## For
+
+Uma função de loop parecida com o while, a principal diferença é que no for existe uma condição de parada, enquanto que no while existe uma condição de continuação. Sua sitaxe é
     for (int i = 0; i < k; i++) {
         bloco de execução em loop
     }
@@ -24,9 +28,13 @@ Como o próprio nome diz, é uma estrutura que garante um looping. É muito util
     -i < k: k pode receber o valor de qualquer número inteiro. Representa a quantidade de vezes que o for vai ser executado, por exemplo se k = 10, o for vai executar até que i seja igual a 10.
     -i++: Representa o incremento de i. O mesmo que i = i + 1.
 
-- Break: Não é um loop, mas é uma maneira de parar a qualquer momento, mesmo se ele ainda puder continuar executando. Só pode ser usado dentro de um loop ou swith.
+## Break
 
-- Continue: Ao contrário do break que para uma execução, o continue continua, exemplo:
+Não é um loop, mas é uma maneira de parar a qualquer momento, mesmo se ele ainda puder continuar executando. Só pode ser usado dentro de um loop ou swith.
+
+## Continue
+
+Ao contrário do break que para uma execução, o continue continua, exemplo:
     *Contar de 20 a 100, mas seu contador começa em 0
     for(;;){
         if (i < 20) continue;
@@ -34,7 +42,9 @@ Como o próprio nome diz, é uma estrutura que garante um looping. É muito util
     }
     *Aqui ele vai retornar a partir de 20 e ignorar tudo abaixo.
 
-- Foreach: Um loop usado em arrays
+## Foreach
+
+Um loop usado em arrays
     for(tipo n: nomeArray){
         ...
     }

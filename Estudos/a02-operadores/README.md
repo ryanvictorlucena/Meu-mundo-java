@@ -6,7 +6,7 @@
 - divisão /;
 - resto da divisão %;
 
-Relacionais:
+## Relacionais
 
 - maior que (x > y);
 - menor que (x < y);
@@ -15,12 +15,12 @@ Relacionais:
 - igual ==;
 - diferente !=;
 
-Logicos:
+## Lógico
 
 - and && -> ambos devem ser verdadeiros para satisfazer
 - or || -> se um for verdadeiro satisfaz
 
-Atribuição:
+## Atribuição
 
 - soma +=;
 - subtração -=;
