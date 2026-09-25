@@ -186,3 +186,80 @@ Retorna uma representação textual do objeto. É um método da classe Object e 
     @Override
     public String toString() {
     }
+
+## Modificador Final
+
+### Tipo Primitivo
+
+Atributos podem ser modificados, mas se você definir uma variável do tipo primitivo com o modificador final esse atributo vai receber um único valor constante ao ser inicializado, ou seja, único e imutável.
+
+Quando o modificador final é acompanhado de um static (static final) a inicialização deve acontecer na própria declaração.
+
+    private static final double velocidadeMax = 300;
+
+Caso só tenha o modificador final, pode ser inicializado no construtor ou no bloco de inicialização.
+
+    private final double velocidadeMax;
+
+    public Carro() {
+        velocidadeMax = 300;
+    }
+
+### Tipo Referência
+
+Em objetos, o final impede que a referência seja alterada, mas os atributos internos do objeto anda podem ser modificados, a menos que também sejam final. Em resumo, aqui você não pode alterar a referência ao objeto.
+
+### Final em Classes e Métodos
+
+Se uma classe for final, ela não pode ser extendida e consequentemente não terá nenhum acesso a sobrescrita dos métodos. Logo, se um método for definido como final, esse metodo não poderá ser sobrescrito.
+
+## Enumeração
+
+Para resolver o problema de inconsistência de dados, podemos limitar as opções de aceite para definir Strings usaveis para uma determinada situação. Fazemos isso usando um tipo de classe especial de java, a classe enum, que define um conjuto fixo de constantes nomeadas.
+
+    public enum ClienteTipo {
+        PESSOA_FISICA,
+        PESSOA_JURIDICA   
+    }
+
+Em enum, não existe tipo String, essa classe define opções válidas para determinado uso.
+
+### Construtores e Atributos
+
+Uma classe do tipo enum possui um construtor "escondido" que sempre inicializa automaticamente os tipos criados. Contudo, podemos agregar numerações a esses tipos se criarmos um construtor passando o tipo (nesse caso int) como parâmetro.
+
+    public enum ClienteTipo {
+        PESSOA_FISICA(1),
+        PESSOA_JURIDICA(2);
+
+        private int valor;
+
+        ClienteTipo(int valor) {
+            this.valor = valor;
+        } 
+    }
+
+Observação: Os atributos criados em uma classe do tipo enum nunca podem ir acima dos tipos, sempre devem ser criados abaixo deles.
+
+### Sobrescrita de Métodos
+
+Quando você cria um método que depende dos tipos, por exemplo na classe Pagamento, o valor do pagamento vai depender se você vai pagar no crédito ou no debito.
+
+    pubslic enum PagamentoTipo {
+        DEBITO {
+            @Override 
+            public double calcularDesconto(double valor) {
+            return valor * 0.1;
+            }
+        }, 
+        CREDITO {
+            @Override
+            public double calcularDesconto(double valor) {
+            return valor * 0.5;
+            }
+        };
+
+        public abstract double calcularDesconto(double valor);
+    }
+
+Quando você diz que um método é abstrato, ele não pode possuir um corpo, ele é um método criado para ser sobrescrito.
