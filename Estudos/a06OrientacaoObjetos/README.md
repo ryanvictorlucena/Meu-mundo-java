@@ -179,7 +179,7 @@ Ao usar a palavra super, você está se referindo ao objeto da classe mãe, ou s
 
 Quando nos referimos a herança e queremos ter acesso a atributos da super classe, o modificador de acesso protected vai dar acesso direto a todas as sub classes ou classes que fazem parte do mesmo pacote. Usando o exemplo de Pessoa e Funcionario, se eu quiser usar os atributos de Pessoa em Funcionario eu chamo o super.
 
-## TOSTRING
+### ToString
 
 Retorna uma representação textual do objeto. É um método da classe Object e todo objeto de java herda esse método de Object. Esse método retorna o nome da classe + um código hash então é comum sobrescrever esse método nas classes para que tenha uma descrição mais legível e informativa.
 
@@ -245,7 +245,7 @@ Observação: Os atributos criados em uma classe do tipo enum nunca podem ir aci
 
 Quando você cria um método que depende dos tipos, por exemplo na classe Pagamento, o valor do pagamento vai depender se você vai pagar no crédito ou no debito.
 
-    pubslic enum PagamentoTipo {
+    public enum PagamentoTipo {
         DEBITO {
             @Override 
             public double calcularDesconto(double valor) {
