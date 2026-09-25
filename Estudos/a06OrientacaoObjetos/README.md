@@ -168,3 +168,7 @@ Usamos extends para indicar que uma classe herda métodos e atributos de outra
 
     public class filho extends mae {
     }
+
+Exemplo: Em uma classe Pessoa temos os atributos nome, cpf e endereco. Teremos uma outra classe, Funcionario, que herda esses atributos da classe Pessoa e inclui seus prórprios atributos como salario, por exemplo.
+
+Nesse caso, mesmo com os mesmos atributos, o funcionamento vai depender o do objeto, se eu chamo o objeto Pessoa os atributos a serem executados serão os seus, o mesmo para Funcionario.
