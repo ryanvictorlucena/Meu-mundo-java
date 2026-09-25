@@ -172,3 +172,17 @@ Usamos extends para indicar que uma classe herda métodos e atributos de outra
 Exemplo: Em uma classe Pessoa temos os atributos nome, cpf e endereco. Teremos uma outra classe, Funcionario, que herda esses atributos da classe Pessoa e inclui seus prórprios atributos como salario, por exemplo.
 
 Nesse caso, mesmo com os mesmos atributos, o funcionamento vai depender o do objeto, se eu chamo o objeto Pessoa os atributos a serem executados serão os seus, o mesmo para Funcionario.
+
+Ao usar a palavra super, você está se referindo ao objeto da classe mãe, ou seja, no exemplo ao usar super em algum método de Funcionario, você vai está chamando os atributos que estão declarados em Pessoa (classe mãe). Isso acontece por causa da regra de sobrescrita, que garante acesso a todos os atributos da classe mãe.
+
+### Protected
+
+Quando nos referimos a herança e queremos ter acesso a atributos da super classe, o modificador de acesso protected vai dar acesso direto a todas as sub classes ou classes que fazem parte do mesmo pacote. Usando o exemplo de Pessoa e Funcionario, se eu quiser usar os atributos de Pessoa em Funcionario eu chamo o super.
+
+## TOSTRING
+
+Retorna uma representação textual do objeto. É um método da classe Object e todo objeto de java herda esse método de Object. Esse método retorna o nome da classe + um código hash então é comum sobrescrever esse método nas classes para que tenha uma descrição mais legível e informativa.
+
+    @Override
+    public String toString() {
+    }

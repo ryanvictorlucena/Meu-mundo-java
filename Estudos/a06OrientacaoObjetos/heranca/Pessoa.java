@@ -1,7 +1,7 @@
 package heranca;
 
 public class Pessoa {
-    private String nome;
+    private  String nome;
     private String cpf;
     private Endereco endereco;
 
